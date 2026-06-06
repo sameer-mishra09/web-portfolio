@@ -15,8 +15,8 @@ export function Navigation() {
 
   const links = [
     { name: "About", href: "#about" },
-    { name: "Work", href: "#work" },
-    { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#work" },
+    { name: "Education", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -30,8 +30,8 @@ export function Navigation() {
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="#" className="font-serif text-xl font-bold tracking-tight">
-          AM<span className="text-primary">.</span>
+        <a href="#" className="font-serif text-xl font-bold tracking-tight" data-testid="link-logo">
+          SM<span className="text-primary">.</span>
         </a>
 
         <div className="flex items-center gap-8">
@@ -40,6 +40,7 @@ export function Navigation() {
               <a
                 key={link.name}
                 href={link.href}
+                data-testid={`link-nav-${link.name.toLowerCase()}`}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.name}
@@ -51,6 +52,7 @@ export function Navigation() {
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-accent transition-colors"
             aria-label="Toggle theme"
+            data-testid="button-toggle-theme"
           >
             <AnimatePresence mode="wait">
               {theme === "dark" ? (

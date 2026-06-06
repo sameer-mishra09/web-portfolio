@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
 
 export function Hero() {
   return (
@@ -12,7 +11,7 @@ export function Hero() {
           className="flex items-center gap-4 mb-8"
         >
           <div className="h-[1px] w-12 bg-primary"></div>
-          <span className="font-mono text-xs uppercase tracking-widest text-primary">Alex Morgan</span>
+          <span className="font-mono text-xs uppercase tracking-widest text-primary">Sameer Mishra</span>
         </motion.div>
 
         <motion.h1
@@ -21,11 +20,11 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[1.1] tracking-tight mb-8"
         >
-          Crafting digital
+          Turning data into
           <br />
-          <span className="text-muted-foreground italic">experiences</span> that
+          <span className="text-muted-foreground italic">decisions</span> that
           <br />
-          leave a mark.
+          drive results.
         </motion.h1>
 
         <motion.p
@@ -34,7 +33,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12 font-sans"
         >
-          I am a Full Stack Developer & Designer focused on building polished, performant, and deeply interactive web applications. 
+          B.Tech student specializing in Python, Data Science, and AI — passionate about solving real problems through technology and clear communication. Based in Lucknow, India.
         </motion.p>
 
         <motion.div
@@ -45,12 +44,14 @@ export function Hero() {
         >
           <a
             href="#work"
+            data-testid="link-view-projects"
             className="inline-flex h-12 items-center justify-center rounded-none bg-foreground px-8 text-sm font-medium text-background transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
           >
-            View Selected Work
+            View Projects
           </a>
           <a
             href="#contact"
+            data-testid="link-get-in-touch"
             className="inline-flex h-12 items-center justify-center rounded-none border border-border px-8 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
           >
             Get in touch
