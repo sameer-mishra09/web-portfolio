@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "BpM4yx9bUYrbFmWuVQFvi"
+uri = "file://artifacts/portfolio/public/projects/project-1.png"
+type = "image"
+title = "Minimalist e-commerce watch platform"
+
+[[generated]]
+id = "qlwtJ1UlSZF0zjcTD-A5k"
+uri = "file://artifacts/portfolio/public/projects/project-2.png"
+type = "image"
+title = "Dark mode crypto dashboard"
+
+[[generated]]
+id = "tU12qn2k4pdl5La5i0KjB"
+uri = "file://artifacts/portfolio/public/projects/project-3.png"
+type = "image"
+title = "Clean AI note taking app"
+
+[[generated]]
+id = "n24mm7v1A7By6WT0FaX9L"
+uri = "file://artifacts/portfolio/public/projects/project-4.png"
+type = "image"
+title = "Boutique hotel booking site"
