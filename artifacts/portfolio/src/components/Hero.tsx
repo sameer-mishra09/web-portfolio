@@ -10,8 +10,8 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center gap-4 mb-8"
         >
-          <div className="h-[1px] w-12 bg-primary"></div>
-          <span className="font-mono text-xs uppercase tracking-widest text-primary">Sameer Mishra</span>
+          <div className="h-[3px] w-12 bg-primary"></div>
+          <span className="font-serif text-3xl md:text-5xl font-bold tracking-tight text-primary">Sameer Mishra</span>
         </motion.div>
 
         <motion.h1
